@@ -17,11 +17,11 @@ else
   exit 1
 fi
 
-echo "Copying custom component to /config/custom_components/surikat-editor"
+echo "Copying custom component to /config/custom_components/surikat-ha"
 
-mkdir -p /config/custom_components/surikat-editor
+mkdir -p /config/custom_components/surikat-ha
 
-cp -r /app/custom_components/surikat-editor/* /config/custom_components/surikat-editor/
+cp -r /app/custom_components/surikat-ha/* /config/custom_components/surikat-ha/
 
 echo "Custom component copied successfully."
 

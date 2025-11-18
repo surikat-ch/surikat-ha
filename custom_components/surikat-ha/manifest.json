@@ -1,6 +1,6 @@
 {
   "domain": "surikat",
-  "name": "Surikat Plugin for Home Assistant",
+  "name": "Surikat HA",
   "requirements": ["flask", "paho-mqtt"],
   "dependencies": ["frigate"],
   "codeowners": ["@samuelgoumaz"],

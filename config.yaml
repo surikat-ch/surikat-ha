@@ -1,7 +1,7 @@
 # config.yaml (add-on)
 name: "Surikat Homeassistant"
 description: "Surikat plugin for Homeassistant"
-version: "0.11"
+version: "1.0.1"
 slug: "surikat-ha"
 init: false
 arch:
