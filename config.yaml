@@ -59,4 +59,4 @@ schema:
   count: float
   not_need: "str?"
 network:
-  80/TCP: The webserver port (Not used for Ingress)
+  80/TCP: 3000
