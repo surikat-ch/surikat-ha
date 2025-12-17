@@ -1,6 +1,6 @@
 name: "Surikat HA"
 description: "Surikat HA plugin for Home Assistant"
-version: "1.0.25"
+version: "1.0.24"
 slug: "surikat-ha"
 
 init: false
