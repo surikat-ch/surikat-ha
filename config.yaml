@@ -31,32 +31,3 @@ map:
     read_only: False
     path: /surikat-ha/config/path
 image: repo/{arch}-surikat-ha
-options:
-  message: "custom things"
-  logins:
-    - username: beer
-      password: "123456"
-    - username: cheep
-      password: "654321"
-  random:
-    - haha
-    - hihi
-  link: "http://example.com/"
-  size: 15
-  count: 1.2
-schema:
-  message: str
-  logins:
-    - username: str
-      password: str
-  random:
-    - "match(^\\w*$)"
-  ssh:
-    private_key: str
-    public_key: str
-  link: url
-  size: "int(5,20)"
-  count: float
-  not_need: "str?"
-network:
-  80/TCP: 3000
