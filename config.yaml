@@ -12,7 +12,7 @@
 name: "Surikat HA"
 description: "My first real add-on!"
 url: "https://github.com/surikat-ch/surikat-ha-repo"
-version: "1.0.4"
+version: "1.0.5"
 slug: "surikat_ha"
 init: false
 arch:
