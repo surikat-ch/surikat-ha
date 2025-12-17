@@ -1,16 +1,33 @@
 ARG BUILD_FROM=python:3.11-slim
 FROM ${BUILD_FROM}
 
+# Utiliser bash pour les scripts
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
+# Installer dépendances système
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         bash \
-        python3 \
+        curl \
+        git \
+        build-essential \
+        libffi-dev \
+        libssl-dev \
+        python3-dev \
         python3-pip && \
-    apt-get clean && rm -rf /var/lib/apt/lists/*
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
+# Copier scripts et composants
+COPY options.py /app/options.py
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
 
+# Copier les custom_components dans /config
 COPY custom_components /config/custom_components
 
-CMD [ "/run.sh" ]
+# Copier le fichier options.yaml (valeurs par défaut)
+COPY options.yaml /app/options.yaml
+
+# Définir le point d'entrée
+CMD ["/run.sh"]

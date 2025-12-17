@@ -1,0 +1,6 @@
+mqtt_host: "mqtt://localhost"
+mqtt_port: 1883
+mqtt_topic: "frigate/events"
+mqtt_user: "user"
+mqtt_password: "password"
+default_name: "Surikat"
