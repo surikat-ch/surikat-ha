@@ -28,7 +28,5 @@
       "target": "/config",
       "readonly": false
     }
-  },
-  "image": "local/slug",
-  "webui": "http://[HOST]:[PORT:8000]"
+  }
 }
