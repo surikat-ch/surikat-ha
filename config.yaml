@@ -29,5 +29,5 @@ map:
   - type: ssl
   - type: homeassistant_config
     read_only: False
-    path: /surikat-ha/config/path
+    path: /custom/config/path
 image: repo/{arch}-surikat-ha
