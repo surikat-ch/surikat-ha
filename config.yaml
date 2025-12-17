@@ -12,7 +12,7 @@
 name: "Surikat HA"
 description: "My first real add-on!"
 url: "https://github.com/surikat-ch/surikat-ha-repo"
-version: "1.0.91"
+version: "1.0.92"
 slug: "surikat_ha"
 init: false
 arch:
@@ -30,4 +30,3 @@ map:
   - type: homeassistant_config
     read_only: False
     path: /custom/config/path
-image: surikat-ha:local
